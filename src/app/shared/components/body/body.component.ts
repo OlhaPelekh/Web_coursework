@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { Chart } from 'node_modules/chart.js';
-import { Chart, registerables } from 'chart.js';
-Chart.register(...registerables);
+import { Chart } from 'chart.js';
+// Chart.register(...registerables);
 declare var $: any;
 @Component({
   selector: 'app-body',
@@ -48,51 +48,54 @@ export class BodyComponent implements OnInit {
         ],
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug"],
       },
-  //     linearGradientLine: true,
-  // options: {
-  //   tooltips: {
-  //     mode: "nearest",
-  //     intersect: false,
-  //     yAlign: null,
-  //     xAlign: "center",
-  //     borderColor: "#3f51b5",
-  //     pointBorderWidth: 10,
-  //     pointHoverRadius: 10,
-  //     pointHoverBorderWidth: 1,
-  //     borderWidth: 9,
+      linearGradientLine: true,
+  options: {
+    tooltips: {
+      mode: "nearest",
+      intersect: false,
+      yAlign: null,
+      xAlign: "center",
+      borderColor: "#3f51b5",
+      pointBorderWidth: 10,
+      pointHoverRadius: 10,
+      pointHoverBorderWidth: 1,
+      borderWidth: 9,
 
-  //     callbacks: {
-  //       label: function (t, d) {
-  //         var xLabel = d.datasets[t.datasetIndex].label;
-  //         var yLabel = t.yLabel / 80;
-  //         if (t.datasetIndex === 1) return false;
-  //         else if (t.datasetIndex === 0)
-  //           return xLabel + "%" + yLabel.toFixed(2);
-  //       },
-  //     },
-  //   },
-  //   responsive: false,
-  //   maintainAspectRatio: false,
-  //   scales: {
-  //     xAxes: [
-  //       {
-  //         barPercentage: 0.97,
-  //         categoryPercentage: 1,
-  //       },
-  //     ],
-  //     yAxes: [
-  //       {
-  //         stacked: true,
-  //         ticks: {
-  //           display: false,
-  //         },
-  //         gridLines: {
-  //           display: false,
-  //         },
-  //       },
-  //     ],
-  //   },
-  // },
+      callbacks: {
+        // @ts-ignore: Unreachable code error
+        label: function (t, d) {
+          // @ts-ignore: Unreachable code error
+          var xLabel = d.datasets[t.datasetIndex].label;
+          // @ts-ignore: Unreachable code error
+          var yLabel = t.yLabel / 80;
+          if (t.datasetIndex === 1) return false;
+          else if (t.datasetIndex === 0)
+            return xLabel + "%" + yLabel.toFixed(2);
+        },
+      },
+    },
+    responsive: false,
+    maintainAspectRatio: false,
+    scales: {
+      xAxes: [
+        { // @ts-ignore: Unreachable code error
+          barPercentage: 0.97,
+          categoryPercentage: 1,
+        },
+      ],
+      yAxes: [
+        {
+          stacked: true,
+          ticks: {
+            display: false,
+          },
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+    },
+  },
       
     });
 
@@ -134,28 +137,28 @@ var myChart3 = new Chart(ctx3, {
       },
     ],
   },
-  // options: {
-  //   responsive: false,
-  //   maintainAspectRatio: false,
-  //   scales: {
-  //     xAxes: [
-  //       {
-  //         stacked: true,
-  //         gridLines: {
-  //           display: false,
-  //         },
-  //       },
-  //     ],
-  //     yAxes: [
-  //       {
-  //         stacked: true,
-  //         gridLines: {
-  //           display: false,
-  //         },
-  //       },
-  //     ],
-  //   },
-  // },
+  options: {
+    responsive: false,
+    maintainAspectRatio: false,
+    scales: {
+      xAxes: [
+        {
+          stacked: true,
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+      yAxes: [
+        {
+          stacked: true,
+          gridLines: {
+            display: false,
+          },
+        },
+      ],
+    },
+  },
 });
 
 /////////////////////////////////////////////////
@@ -173,23 +176,23 @@ var myChart2 = new Chart(ctx2, {
       },
     ],
   },
-  // options: {
-  //   rotation: 1,
-  //   responsive: false,
-  //   title: {
-  //     display: true,
-  //     padding: 5,
-  //   },
-  //   legend: {
-  //     display: true,
-  //     position: "right",
-  //     labels: {
-  //       boxWidth: 20,
-  //       fontColor: "#111",
-  //       padding: 20,
-  //     },
-  //   },
-  // },
+  options: {
+    rotation: 1,
+    responsive: false,
+    title: {
+      display: true,
+      padding: 5,
+    },
+    legend: {
+      display: true,
+      position: "right",
+      labels: {
+        boxWidth: 20,
+        fontColor: "#111",
+        padding: 20,
+      },
+    },
+  },
 });
 
 /////////////////////////////////
