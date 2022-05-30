@@ -2,18 +2,21 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DefaultComponent } from './layout/default/default.component';
 import { MenuComponent } from './module/menu/menu.component';
+import { PagesComponent } from './module/pages/pages.component';
 
 const routes: Routes = [
-  {
-    path: '',
+  
+   {path: 'pages',
+    component: PagesComponent},
+    {path: '',
     component: DefaultComponent,
     children: [
       {
         path: '',
-        component: MenuComponent,
+        component: MenuComponent
       }
-    ],
-  },
+    ],}
+ 
 ];
 
 @NgModule({

@@ -1,0 +1,115 @@
+.link.icon {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  height: 25px;
+}
+
+.fixed.borderless.menu {
+  background-color: hsl(231.4, 54.4%, 40.4%);
+}
+
+.text {
+  font-size: 15px;
+  padding: 15px 12px;
+  color: rgb(196, 190, 190);
+}
+
+#jumbotron {
+  padding: 2em;
+  //margin: 0em auto 0em auto;
+  font-weight: 700;
+  background-color:#F2F2F2;
+}
+
+.text1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: rgb(155, 153, 153);
+}
+
+.count1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  color: #3f51b5;
+}
+
+.without-margin-bottom {
+  margin-bottom: 0px !important;
+}
+
+.without-margin-top {
+  margin-top: 0px !important;
+}
+
+.change {
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  padding: 10px 12px;
+  color: rgb(230, 227, 227);
+}
+
+.unlock.icon,
+.clipboard.outline.icon,
+.ban.icon,
+.paperclip.icon
+ {
+  font-size: 45px;
+  padding: 12px 12px;
+  color: rgb(230, 227, 227);
+  margin: 0.6em auto 0.5em auto;
+}
+
+.twelve.wide.column {
+  margin: 2em auto 1em auto;
+}
+
+.ui.right.floated.green.button{
+  margin:-7px 0px 0px 0px;
+}
+
+.text2{
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+.line1 { 
+  border-left: 2px solid hsl(231.4, 54.4%, 40.4%); 
+  padding: 10px 10px 10px 10px; 
+  margin: -7px 0px -1.5px 6px;
+ }
+
+ .line2 { 
+  border-left: 2px solid #e54919; 
+  padding: 10px 10px 10px 10px; 
+  margin: -7px 0px -1.5px 6px;
+ }
+
+ .line3 { 
+  border-left: 2px solid #4baf4f; 
+  padding: 10px 10px 10px 10px; 
+  margin: -7px 0px -1.5px 6px;
+ }
+
+input[type=checkbox]:checked + label  { 
+  text-decoration: line-through;
+  color: rgb(184, 184, 184);
+  }
+
+.todo-wrap{
+	width: 100%;
+	padding: 10px;
+}
+.todos-container button,
+.delete-task{
+	border: none;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	float: right;
+  background-color: aqua;
+}
+.todo-container{
+	overflow: hidden;
+	vertical-align: middle;
+}
+
