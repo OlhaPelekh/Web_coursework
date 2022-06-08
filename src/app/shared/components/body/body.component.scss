@@ -47,18 +47,26 @@
     padding: 10px 12px;
     color: rgb(230, 227, 227);
   }
-  
-  .unlock.icon,
-  .clipboard.outline.icon,
-  .ban.icon,
-  .paperclip.icon
-   {
+
+@mixin icon{
     font-size: 45px;
     padding: 12px 12px;
     color: rgb(230, 227, 227);
     margin: 0.6em auto 0.5em auto;
-  }
-  
+}
+.unlock.icon{
+  @include icon;
+}
+.clipboard.outline.icon{
+  @include icon;
+}
+.ban.icon{
+  @include icon;
+}
+.paperclip.icon{
+  @include icon;
+}
+
   .twelve.wide.column {
     margin: 2em auto 1em auto;
   }
@@ -90,8 +98,7 @@
     margin: -7px 0px -1.5px 6px;
    }
   
-  input[type=checkbox]:checked + label  { 
-    text-decoration: line-through;
-    color: rgb(184, 184, 184);
-    }
-  
+  // input[type=checkbox]:checked + label  { 
+  //   text-decoration: line-through;
+  //   color: rgb(184, 184, 184);
+  //   }
