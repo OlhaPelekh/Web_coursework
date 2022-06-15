@@ -13,6 +13,16 @@ export class TodoListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+
+    // $("input[type='checkbox']").change(function() {
+    //   if($(this).is(':checked')) {
+    //     $(this).next('label').addClass('checked');
+    //   } else {
+    //      $(this).next('label').removeClass('checked');
+    //   }
+    //  });
+
+
     function updateCounterDisplay() {
       var count = $(".todo-container").length;
       $(".counter-display").text(count);
@@ -103,5 +113,7 @@ export class TodoListComponent implements OnInit {
       });
     });
   }
+
+
 
 }
